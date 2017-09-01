@@ -39,8 +39,6 @@ app.get('/about', (req, res) => {
     pageTitle: 'About Page'
   });
 });
-
-// /bad - send back json with errorMessage
 app.get('/bad', (req, res) => {
   res.send({
     errorMessage: 'Unable to handle request'

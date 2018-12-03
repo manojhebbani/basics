@@ -41,11 +41,6 @@ app.get('/about', (req, res) => {
     pageTitle: 'About Page'
   });
 });
-app.get('/bad', (req, res) => {
-  res.send({
-    errorMessage: 'Unable to handle request'
-  });
-});
 
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
